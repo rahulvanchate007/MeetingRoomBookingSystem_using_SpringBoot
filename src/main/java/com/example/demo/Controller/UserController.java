@@ -26,9 +26,9 @@ import com.example.demo.Bean.MeetingRequest;
 @Controller
 public class UserController {
 	MeetingRequest meetingrequest=new MeetingRequest();
-	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+	DateTimeFormatter datestamp = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 	LocalDateTime now = LocalDateTime.now();
-	DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("HH:mm:ss");
+	DateTimeFormatter timestamp = DateTimeFormatter.ofPattern("HH:mm:ss");
 	LocalDateTime nowtime = LocalDateTime.now();
 
 //This method is called when the User wants to select from Resources and Meeting Rooms.
@@ -66,8 +66,8 @@ public String requestmeeting(HttpServletRequest request, HttpServletResponse res
 	meetingrequest.setEndtime(request.getParameter("endtime"));
 	meetingrequest.setResource(request.getParameter("resource"));
 	meetingrequest.setStatus("new");
-	meetingrequest.setDatestamp((dtf.format(now)));
-	meetingrequest.setTimestamp((dtf1.format(nowtime)));
+	meetingrequest.setDatestamp((datestamp.format(now)));
+	meetingrequest.setTimestamp((timestamp.format(nowtime)));
 	meetingrequest.setUser((String) session.getAttribute("username"));
 	String url="http://localhost:8082/userfunctionalities/requestmeetingroom";
 	RestTemplate resttemplate=new RestTemplate();
@@ -96,7 +96,7 @@ public ModelAndView viewRequests(HttpServletRequest request, HttpServletResponse
 	return modelandview;
 }
 
-//This method is called when the User clicks on the Cancel Request in the JSp.
+//This method is called when the User clicks on the Cancel Request in the JSP.
 @RequestMapping( value="/cancelrequest",method = RequestMethod.POST)
 public String cancelrequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 {
