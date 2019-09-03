@@ -73,17 +73,17 @@ public class AdminDao {
 	
 	//This is the main method to perform accept a request functionality.
 	public String acceptrequest(MeetingRequest meetingrequest) {
-		MeetingRequest meetingReq=meetingrequestinterface.findById(meetingrequest.getId()).get();
-		meetingReq.setStatus("accepted");
-		meetingrequestinterface.save(meetingReq);
+		MeetingRequest accept=meetingrequestinterface.findById(meetingrequest.getId()).get();
+		accept.setStatus("accepted");
+		meetingrequestinterface.save(accept);
 		return "accepted";
 		}
 	
 	//This is the main method to perform reject a request functionality.
 	public String rejectrequest(MeetingRequest meetingrequest) {
-		MeetingRequest meetingReq=meetingrequestinterface.findById(meetingrequest.getId()).get();
-		meetingReq.setStatus("rejected");
-		meetingrequestinterface.save(meetingReq);
+		MeetingRequest reject=meetingrequestinterface.findById(meetingrequest.getId()).get();
+		reject.setStatus("rejected");
+		meetingrequestinterface.save(reject);
 		return "rejected";
 		}
 
