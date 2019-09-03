@@ -160,9 +160,9 @@ RestTemplate resttemplate = new RestTemplate();
 ResponseEntity<ArrayList<String>> responseEntity1 = resttemplate.exchange("http://localhost:8082/adminrest/getresource",
 HttpMethod.GET, null, new ParameterizedTypeReference<ArrayList<String>>() {
 });
-ModelAndView mv=new ModelAndView("MostUsedResource.jsp");
+ModelAndView modelandview=new ModelAndView("MostUsedResource.jsp");
 mv.addObject("resources", responseEntity1.getBody());
-return mv;
+return modelandview;
 }
 
 	//This method is called when the Admin clicks on the Most Used Resource option in the JSP.
@@ -192,9 +192,9 @@ RestTemplate resttemplate = new RestTemplate();
 ResponseEntity<ArrayList<String>> responseEntity1 = resttemplate.exchange("http://localhost:8082/adminrest/getmeetingroom",
 HttpMethod.GET, null, new ParameterizedTypeReference<ArrayList<String>>() {
 });
-ModelAndView mv=new ModelAndView("MostUsedMeetingRoom.jsp");
+ModelAndView modelandview=new ModelAndView("MostUsedMeetingRoom.jsp");
 mv.addObject("meetingrooms", responseEntity1.getBody());
-return mv;
+return modelandview;
 }
 
 	//This method is called when the Admin clicks on the Most Used Meeting Room option in the JSP.
