@@ -1,4 +1,4 @@
-package com.example.demo.RestController;
+package com.MRBSBooking.RestController;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Bean.LoginBean;
-import com.example.demo.Dao.LoginDao;
+import com.MRBSBooking.Bean.LoginBean;
+import com.MRBSBooking.Dao.LoginDao;
 
 @RestController
 @RequestMapping("/myresource")

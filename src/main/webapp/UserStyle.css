@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_MYAxDYORFA55kreg4p_N5BZjiLaAW7RO_u8SE9CAcBqhIEvqQ");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-attachment: scroll;
+  background-size: 2000px;
+}
+
+input[type=text]{
+  background-color: silver;
+  color: black;
+}
+
+input[type=submit] {
+	border:none;
+	width: 150px;
+	height: 40px;
+	border: 2px solid black;
+	text-shadow: 2px 2px 5px silver;
+	border-radius: 12px;
+}

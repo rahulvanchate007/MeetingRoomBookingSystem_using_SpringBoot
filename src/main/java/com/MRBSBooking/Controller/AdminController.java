@@ -1,4 +1,4 @@
-package com.example.demo.Controller;
+package com.MRBSBooking.Controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,10 +23,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.Bean.LoginBean;
-import com.example.demo.Bean.MeetingRequest;
-import com.example.demo.Bean.MeetingRoom;
-import com.example.demo.Bean.Resource;
+import com.MRBSBooking.Bean.LoginBean;
+import com.MRBSBooking.Bean.MeetingRequest;
+import com.MRBSBooking.Bean.MeetingRoom;
+import com.MRBSBooking.Bean.Resource;
 
 //This is the Main Controller that directs the Admin Functionalities
 @Controller

@@ -1,11 +1,11 @@
-package com.example.demo.Repository;
+package com.MRBSBooking.Repository;
 
 import java.util.ArrayList;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.example.demo.Bean.MeetingRoom;
+import com.MRBSBooking.Bean.MeetingRoom;
 
 public interface MeetingRoomInterface extends CrudRepository<MeetingRoom, String>{
 

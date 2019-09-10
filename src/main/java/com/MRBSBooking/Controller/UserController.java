@@ -1,4 +1,4 @@
-package com.example.demo.Controller;
+package com.MRBSBooking.Controller;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.Bean.MeetingRequest;
+import com.MRBSBooking.Bean.MeetingRequest;
 
 //This is the main Controller that directs the UserFunctionalities.
 @Controller

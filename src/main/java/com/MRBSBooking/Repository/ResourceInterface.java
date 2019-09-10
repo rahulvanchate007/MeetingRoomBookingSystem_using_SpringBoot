@@ -1,11 +1,11 @@
-package com.example.demo.Repository;
+package com.MRBSBooking.Repository;
 
 import java.util.ArrayList;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.example.demo.Bean.Resource;
+import com.MRBSBooking.Bean.Resource;
 
 public interface ResourceInterface extends CrudRepository<Resource, String> {
 

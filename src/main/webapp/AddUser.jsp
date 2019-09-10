@@ -10,6 +10,7 @@
 <body>
 <center>
 <form method="post" action="/add">
+<br>
 Enter the Username to add:<br>
 <input type="text" name="uname" required><br>
 Enter the password:<br>

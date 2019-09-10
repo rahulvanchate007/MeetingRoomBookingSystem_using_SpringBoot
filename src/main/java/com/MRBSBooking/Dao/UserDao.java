@@ -1,4 +1,4 @@
-package com.example.demo.Dao;
+package com.MRBSBooking.Dao;
 
 import java.util.ArrayList;
 
@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Component;
 
-import com.example.demo.Bean.MeetingRequest;
-import com.example.demo.Repository.MeetingRequestInterface;
-import com.example.demo.Repository.MeetingRoomInterface;
-import com.example.demo.Repository.ResourceInterface;
+import com.MRBSBooking.Bean.MeetingRequest;
+import com.MRBSBooking.Repository.MeetingRequestInterface;
+import com.MRBSBooking.Repository.MeetingRoomInterface;
+import com.MRBSBooking.Repository.ResourceInterface;
 
 @EnableAutoConfiguration
 @Service

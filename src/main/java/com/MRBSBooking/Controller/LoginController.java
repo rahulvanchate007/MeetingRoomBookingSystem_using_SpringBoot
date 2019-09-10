@@ -1,4 +1,4 @@
-package com.example.demo.Controller;
+package com.MRBSBooking.Controller;
 
 import javax.servlet.http.HttpSession;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.Bean.LoginBean;
+import com.MRBSBooking.Bean.LoginBean;
 
 @Controller
 @RequestMapping("/control")

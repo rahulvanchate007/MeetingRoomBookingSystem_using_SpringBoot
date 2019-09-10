@@ -1,4 +1,4 @@
-package com.example.demo.Bean;
+package com.MRBSBooking.Bean;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;

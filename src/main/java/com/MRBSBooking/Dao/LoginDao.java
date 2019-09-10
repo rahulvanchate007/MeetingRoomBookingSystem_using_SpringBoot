@@ -1,10 +1,10 @@
-package com.example.demo.Dao;
+package com.MRBSBooking.Dao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.Bean.LoginBean;
-import com.example.demo.Repository.LoginInterface;
+import com.MRBSBooking.Bean.LoginBean;
+import com.MRBSBooking.Repository.LoginInterface;
 
 
 @EnableAutoConfiguration
