@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8" import="java.util.*,com.example.demo.*,com.example.demo.Bean.*"%>
+pageEncoding="UTF-8" import="java.util.*,com.MRBSBooking.*,com.MRBSBooking.Bean.*"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>ACCEPT OR REJECT</title>
 </head>
+<link rel="stylesheet" type="text/css" href="AdminStyle.css">
 <center>
 <body bgcolor="D3D3D3">
 <h1>ACCEPT OR REJECT</h1>
@@ -44,7 +45,7 @@ out.print("<tr><td>" + meetingrequest.getId() + "</td>" + "<td>" + meetingreques
 
 <form method="post" action="/acceptrequest">
 Enter the ID to Accept:
-<input type="text" name="id" required>
+<input type="text" name="id" required> 
 <input type="submit" value="accept">
 </form>
 

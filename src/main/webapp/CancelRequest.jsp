@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8" import="java.util.*,com.example.demo.*,com.example.demo.Bean.*"%>
+pageEncoding="UTF-8" import="java.util.*,com.MRBSBooking.*,com.MRBSBooking.Bean.*"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>CANCEL REQUEST</title>
 </head>
-<br>
+<link rel="stylesheet" type="text/css" href="UserStyle.css">
+
 <marquee direction="right" scrollamount=20 behavior="scroll" bgcolor="gray" >Cancel Request</marquee>
 <br>
 <body bgcolor="D3D3D3">

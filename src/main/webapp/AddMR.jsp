@@ -14,10 +14,12 @@
 <br>
 <center>
 <form method="post" action="/addmr">
+<br>
 Enter the MR Name to add:<br>
 <input type="text" name="mrname" required><br>
 Enter the MR number:<br>
 <input type="text" name="mrno" required>
+<br>
 <br>
 <input type="submit" value="add">
 

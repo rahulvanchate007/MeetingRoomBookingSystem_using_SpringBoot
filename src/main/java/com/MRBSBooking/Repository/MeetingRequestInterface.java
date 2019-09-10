@@ -1,9 +1,9 @@
-package com.example.demo.Repository;
+package com.MRBSBooking.Repository;
 
 import java.util.ArrayList;
 import org.springframework.data.repository.query.Param;
 
-import com.example.demo.Bean.MeetingRequest;
+import com.MRBSBooking.Bean.MeetingRequest;
 
 import java.util.List;
 

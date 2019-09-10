@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.MRBSBooking;
 
 import org.springframework.stereotype.Service;
 

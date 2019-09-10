@@ -5,7 +5,7 @@
 <html>
 <head>
 <br>
-<marquee direction="right" scrollamount=20 behavior="scroll" bgcolor="gray" >Request Meeting Room</marquee>
+<marquee direction="right" scrollamount=20 behavior="scroll" bgcolor="silver" >Request Meeting Room</marquee>
 <br>
 <meta charset="UTF-8">
 <title>Insert title here</title>

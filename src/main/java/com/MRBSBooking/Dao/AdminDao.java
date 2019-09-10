@@ -1,4 +1,4 @@
-package com.example.demo.Dao;
+package com.MRBSBooking.Dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,14 +8,14 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.Bean.LoginBean;
-import com.example.demo.Bean.MeetingRequest;
-import com.example.demo.Bean.MeetingRoom;
-import com.example.demo.Bean.Resource;
-import com.example.demo.Repository.LoginInterface;
-import com.example.demo.Repository.MeetingRequestInterface;
-import com.example.demo.Repository.MeetingRoomInterface;
-import com.example.demo.Repository.ResourceInterface;
+import com.MRBSBooking.Bean.LoginBean;
+import com.MRBSBooking.Bean.MeetingRequest;
+import com.MRBSBooking.Bean.MeetingRoom;
+import com.MRBSBooking.Bean.Resource;
+import com.MRBSBooking.Repository.LoginInterface;
+import com.MRBSBooking.Repository.MeetingRequestInterface;
+import com.MRBSBooking.Repository.MeetingRoomInterface;
+import com.MRBSBooking.Repository.ResourceInterface;
 
 @EnableAutoConfiguration
 @Service
@@ -73,17 +73,17 @@ public class AdminDao {
 	
 	//This is the main method to perform accept a request functionality.
 	public String acceptrequest(MeetingRequest meetingrequest) {
-		MeetingRequest accept=meetingrequestinterface.findById(meetingrequest.getId()).get();
-		accept.setStatus("accepted");
-		meetingrequestinterface.save(accept);
+		MeetingRequest meetingReq=meetingrequestinterface.findById(meetingrequest.getId()).get();
+		meetingReq.setStatus("accepted");
+		meetingrequestinterface.save(meetingReq);
 		return "accepted";
 		}
 	
 	//This is the main method to perform reject a request functionality.
 	public String rejectrequest(MeetingRequest meetingrequest) {
-		MeetingRequest reject=meetingrequestinterface.findById(meetingrequest.getId()).get();
-		reject.setStatus("rejected");
-		meetingrequestinterface.save(reject);
+		MeetingRequest meetingReq=meetingrequestinterface.findById(meetingrequest.getId()).get();
+		meetingReq.setStatus("rejected");
+		meetingrequestinterface.save(meetingReq);
 		return "rejected";
 		}
 

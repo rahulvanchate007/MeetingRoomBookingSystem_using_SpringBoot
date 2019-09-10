@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8" import="com.example.demo.*,java.util.*"%>
+pageEncoding="UTF-8" import="com.MRBSBooking.*,java.util.*"%>
  <jsp:include page="AdminFunctionalities.jsp" />  
 <!DOCTYPE html>
 <html>

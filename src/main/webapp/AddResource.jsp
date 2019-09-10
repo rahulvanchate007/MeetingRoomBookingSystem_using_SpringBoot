@@ -12,10 +12,12 @@
 <body>
 <center>
 <form method="post" action="/addresource">
+<br>
 Enter the Resource Name to add:<br>
 <input type="text" name="resourcename" required><br>
 Enter the Resource number:<br>
 <input type="text" name="resourceno" required>
+<br>
 <br>
 <input type="submit" value="add">
 

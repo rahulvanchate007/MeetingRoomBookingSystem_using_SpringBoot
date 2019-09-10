@@ -1,4 +1,4 @@
-package com.example.demo.RestController;
+package com.MRBSBooking.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Bean.LoginBean;
-import com.example.demo.Bean.MeetingRequest;
-import com.example.demo.Bean.MeetingRoom;
-import com.example.demo.Bean.Resource;
-import com.example.demo.Dao.AdminDao;
-import com.example.demo.Repository.MeetingRequestInterface;
+import com.MRBSBooking.Bean.LoginBean;
+import com.MRBSBooking.Bean.MeetingRequest;
+import com.MRBSBooking.Bean.MeetingRoom;
+import com.MRBSBooking.Bean.Resource;
+import com.MRBSBooking.Dao.AdminDao;
+import com.MRBSBooking.Repository.MeetingRequestInterface;
 
 @RestController
 @RequestMapping("/adminrest")

@@ -6,10 +6,12 @@
 <meta charset="UTF-8">
 <title>LOGIN</title>
 </head>
-<marquee direction="left" scrollamount=10 behavior="scroll" bgcolor="gray" >MEETING ROOM BOOKING SYSTEM</marquee>
+<link rel="stylesheet" type="text/css" href="Loginstyle.css">
+<marquee direction="left" scrollamount=10 behavior="scroll" bgcolor="silver" >MEETING ROOM BOOKING SYSTEM</marquee>
 <center>
+
 <h2>Login</h2>
-<body bgcolor="D3D3D3">
+<body >
 
 	<form method="post" action="control">
 		<br>
@@ -17,8 +19,9 @@
 		<input type="text" name="username" required> <br><br>
 		Password:
 		<input type="password" name="password" required><br><br>
-		<input type="submit" value="submit"><br>
+		<input type="submit" value="LOGIN"><br>
 	</form>
+	
 </body>
 
 </html>
