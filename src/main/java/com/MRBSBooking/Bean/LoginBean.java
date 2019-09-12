@@ -34,7 +34,7 @@ public class LoginBean {
 	private String role;
 	@Override
 	public String toString() {
-		return "LoginBean [username=" + username + ", password=" + password + ", role=" + role + "]";
+		return Messages.getString("LoginBean.0") + username + Messages.getString("LoginBean.1") + password + Messages.getString("LoginBean.2") + role + Messages.getString("LoginBean.3"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 	}	
 	
 	

@@ -26,7 +26,7 @@ MeetingRequestInterface meetingrequestinterface;
 
 public String requestMeetingRoom(MeetingRequest meetingrequest) {
 meetingrequestinterface.save(meetingrequest);
-return "REQUESTED";
+return Messages.getString("UserDao.0"); //$NON-NLS-1$
 }
 
 //This is the main method to get meetingrooms in select tag functionality.
@@ -48,9 +48,9 @@ public ArrayList<MeetingRequest> findMeetingRequestbyUser(String user) {
 //This is the main method to perform cancel request by a user.
 public String cancelrequest(MeetingRequest meetingrequest) {
 	MeetingRequest meetingRequest=meetingrequestinterface.findById(meetingrequest.getId()).get();
-	meetingRequest.setStatus("cancelled");
+	meetingRequest.setStatus(Messages.getString("UserDao.1")); //$NON-NLS-1$
 	meetingrequestinterface.save(meetingRequest);
-	return "cancelled";
+	return Messages.getString("UserDao.2"); //$NON-NLS-1$
 	}
 
 }

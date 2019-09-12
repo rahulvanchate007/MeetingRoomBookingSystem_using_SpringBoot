@@ -11,6 +11,18 @@ pageEncoding="UTF-8" import="java.util.*,com.MRBSBooking.*,com.MRBSBooking.Bean.
 <marquee direction="right" scrollamount=20 behavior="scroll" bgcolor="gray" >Cancel Request</marquee>
 <br>
 <body bgcolor="D3D3D3">
+<div align="right">
+<form method="post" action="Login.jsp">
+<input type="submit" value="Logout">
+</form>
+</div>
+
+<div align="left">
+<form method="post" action="UserFunctionalities.jsp">
+<input type="submit" value="Back To Home">
+</form>
+</div>
+
 <center>
 <h1>CANCEL REQUEST</h1>
 <%

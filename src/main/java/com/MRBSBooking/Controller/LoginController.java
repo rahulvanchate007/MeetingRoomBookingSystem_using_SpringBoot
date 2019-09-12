@@ -2,6 +2,8 @@ package com.MRBSBooking.Controller;
 
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,14 +18,16 @@ import com.MRBSBooking.Bean.LoginBean;
 @SessionAttributes("login")
 public class LoginController {
 
+	@Autowired
+	Environment environment;
+	
 	//This is the main Controller that directs the Login Validation.
 @RequestMapping(method = RequestMethod.GET)
 public ModelAndView logincontroller()
 {
-ModelAndView mv=new ModelAndView("Login.jsp");
+ModelAndView mv=new ModelAndView(Messages.getString("LoginController.0")); //$NON-NLS-1$
 LoginBean loginbean=new LoginBean();
 mv.addObject(loginbean);
-System.out.println(mv);
 return mv;
 }
 
@@ -31,18 +35,18 @@ return mv;
 @RequestMapping(method = RequestMethod.POST)
 public String logincontrol(LoginBean loginbean,HttpSession session)
 {
-System.out.println(loginbean);
-session.setAttribute("username", loginbean.getUsername());
-String url="http://localhost:8082/myresource/insert";
+	String port = environment.getProperty(Messages.getString("LoginController.1")); //$NON-NLS-1$
+session.setAttribute(Messages.getString("LoginController.2"), loginbean.getUsername()); //$NON-NLS-1$
+String url=Messages.getString("LoginController.3")+port+Messages.getString("LoginController.4"); //$NON-NLS-1$ //$NON-NLS-2$
 RestTemplate rt=new RestTemplate();
 String status=rt.postForObject(url, loginbean, String.class);
-System.out.println(status);
-if(status.equals("admin"))
-	return "redirect:AdminFunctionalities.jsp";
-if(status.equals("user"))
-	return "redirect:UserFunctionalities.jsp";
+
+if(status.equals(Messages.getString("LoginController.5"))) //$NON-NLS-1$
+	return Messages.getString("LoginController.6"); //$NON-NLS-1$
+if(status.equals(Messages.getString("LoginController.7"))) //$NON-NLS-1$
+	return Messages.getString("LoginController.8"); //$NON-NLS-1$
 else
-	return "redirect:Error.jsp";
+	return Messages.getString("LoginController.9"); //$NON-NLS-1$
 	
 }
 }
