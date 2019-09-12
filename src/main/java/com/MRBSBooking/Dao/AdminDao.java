@@ -38,27 +38,27 @@ public class AdminDao {
 	public String adduser(LoginBean login) {
 		// TODO Auto-generated method stub
 		logininterface.save(login);
-		return "success";
+		return Messages.getString("AdminDao.0"); //$NON-NLS-1$
 	}
 	
 	//This is the main method to perform delete user functionality.
 	public String deleteuser(LoginBean login) {
 		logininterface.deleteById(login.getUsername());
-		return "success";
+		return Messages.getString("AdminDao.1"); //$NON-NLS-1$
 	}
 	
 	//This is the main method to perform add meeting room functionality.
 	public String addmr(MeetingRoom meetingroom) {
 		// TODO Auto-generated method stub
 		meetingroominterface.save(meetingroom);
-		return "success";
+		return Messages.getString("AdminDao.2"); //$NON-NLS-1$
 	}
 	
 	//This is the main method to perform add resource functionality.
 	public String addresource(Resource resource) {
 		// TODO Auto-generated method stub
 		resourceinterface.save(resource);
-		return "success";
+		return Messages.getString("AdminDao.3"); //$NON-NLS-1$
 	}
 
 	//This is the main method to perform view all bookings functionality.
@@ -74,17 +74,17 @@ public class AdminDao {
 	//This is the main method to perform accept a request functionality.
 	public String acceptrequest(MeetingRequest meetingrequest) {
 		MeetingRequest meetingReq=meetingrequestinterface.findById(meetingrequest.getId()).get();
-		meetingReq.setStatus("accepted");
+		meetingReq.setStatus(Messages.getString("AdminDao.4")); //$NON-NLS-1$
 		meetingrequestinterface.save(meetingReq);
-		return "accepted";
+		return Messages.getString("AdminDao.5"); //$NON-NLS-1$
 		}
 	
 	//This is the main method to perform reject a request functionality.
 	public String rejectrequest(MeetingRequest meetingrequest) {
 		MeetingRequest meetingReq=meetingrequestinterface.findById(meetingrequest.getId()).get();
-		meetingReq.setStatus("rejected");
+		meetingReq.setStatus(Messages.getString("AdminDao.6")); //$NON-NLS-1$
 		meetingrequestinterface.save(meetingReq);
-		return "rejected";
+		return Messages.getString("AdminDao.7"); //$NON-NLS-1$
 		}
 
 	//This is the main method to get resources in select tag functionality.

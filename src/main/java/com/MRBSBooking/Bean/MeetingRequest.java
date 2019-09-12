@@ -15,9 +15,9 @@ public class MeetingRequest {
 	private String startdate;
 	@Override
 	public String toString() {
-		return "MeetingRequest [Id=" + Id + ", startdate=" + startdate + ", enddate=" + enddate + ", starttime="
-				+ starttime + ", endtime=" + endtime + ", user=" + user + ", mrname=" + mrname + ", resource="
-				+ resource + ", status=" + status + ", timestamp=" + timestamp + ", datestamp=" + datestamp + "]";
+		return Messages.getString("MeetingRequest.0") + Id + Messages.getString("MeetingRequest.1") + startdate + Messages.getString("MeetingRequest.2") + enddate + Messages.getString("MeetingRequest.3") //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
+				+ starttime + Messages.getString("MeetingRequest.4") + endtime + Messages.getString("MeetingRequest.5") + user + Messages.getString("MeetingRequest.6") + mrname + Messages.getString("MeetingRequest.7") //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
+				+ resource + Messages.getString("MeetingRequest.8") + status + Messages.getString("MeetingRequest.9") + timestamp + Messages.getString("MeetingRequest.10") + datestamp + Messages.getString("MeetingRequest.11"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 	}
 	@NotNull
 	private String enddate;

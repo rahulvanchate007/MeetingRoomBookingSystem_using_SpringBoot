@@ -9,7 +9,21 @@ pageEncoding="UTF-8" import="java.util.*,com.MRBSBooking.*,com.MRBSBooking.Bean.
 <link rel="stylesheet" type="text/css" href="AdminStyle.css">
 <body bgcolor="D3D3D3">
 <center>
+
+<div align="right">
+<form method="post" action="Login.jsp">
+<input type="submit" value="Logout">
+</form>
+</div>
+
+<div align="left">
+<form method="post" action="AdminFunctionalities.jsp">
+<input type="submit" value="Back To Home">
+</form>
+</div>
+
 <h1>BOOKING HISTORY</h1>
+
 <%
 ArrayList<MeetingRequest> meetingrequests = (ArrayList<MeetingRequest>)request.getAttribute("list");
 %>

@@ -5,8 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Add a User</title>
 </head>
+<link rel="stylesheet" type="text/css" href="AdminStyle.css">
 <body>
 <center>
 <form method="post" action="/add">
